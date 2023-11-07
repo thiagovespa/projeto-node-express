@@ -20,6 +20,18 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('Sanity check') {
+            steps {
+                input "Está tudo certo?"
+            }
+        }
+
+        stage('Deploy - Production') {
+            steps {
+                echo "Deploy Feito!"
+            }
+        }
+    }	
     }
 }
 
