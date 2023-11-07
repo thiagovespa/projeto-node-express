@@ -6,6 +6,11 @@ pipeline {
                 sh 'node --version'
             }
         }
+	stage('Test') {
+            steps {
+                sh 'node --version'
+            }
+        }
     }
 }
 
